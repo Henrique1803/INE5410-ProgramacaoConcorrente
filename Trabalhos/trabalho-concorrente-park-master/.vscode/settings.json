@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "client.h": "c",
+        "tickets.h": "c"
+    }
+}
