@@ -59,7 +59,6 @@ void ponte_sair(veiculo_t *v) {
 
 	sem_wait(&semaforo_bin);
     qtd_veiculos_ponte--;
-    sem_post(&semaforo_bin);
 
     if (qtd_veiculos_ponte == 0) {
         // ToDo: IMPLEMENTAR!
@@ -78,6 +77,7 @@ void ponte_sair(veiculo_t *v) {
             }
         }
    }
+   sem_post(&semaforo_bin);
 }
 
 /* FINALIZA a ponte. */
